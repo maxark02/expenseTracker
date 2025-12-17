@@ -1,0 +1,553 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.options {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    background-color: #141326;
+}
+#sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1111111;
+    width: 20rem;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+    font-family: "Syne", sans-serif;
+
+}
+#menu {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 3423940213904;
+}
+.opt-profile {
+    display: flex;
+    width: 19.5rem;
+    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+.opt-user-info {
+    display: flex;
+    width: 12rem;
+    height: 4rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #E3B53C;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.opt-user-info h3 {
+    font-size: 1rem;
+}
+.opt-user-info h6 {
+    font-size: 10px;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+}
+#profile-img {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #E3B53C;
+    border-radius: 50%;
+}
+#edit {
+    width: 1rem;
+    height: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.options button {
+    background: none;
+    border: none;
+}
+li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    color: white;
+}
+li img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+#premium {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 70px;
+}
+#title-header  {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
+
+body {
+    background: #141326;
+    padding-bottom:80px;
+    font-family: "Syne", sans-serif;
+
+}
+.balance {
+    display: block;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 2rem;
+
+}
+#balance {
+    color: #E3B53C;
+    padding: 1rem;
+}
+p {
+    color: #fff;
+    padding: 1rem;
+}
+.transaction {
+    border-top: #A858EE solid 1px;
+    background: #23203F;
+    font-size: 1.2rem;
+}
+.transactions {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100% ;
+    min-height: 70vh;
+
+}
+.transaction-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 95vw;
+    height: 5rem;
+    background: #141326;
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
+.transaction-card img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.transaction-img-date {
+    text-align: left;
+    padding-left: 1rem;
+    width:90%;
+    color: #fff;
+}
+
+.amount button{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: #262450;
+    border: none;
+    color: #fff;
+}
+
+.bot-navbar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1.5rem;
+    z-index: 10000000000;
+    background: #141326;
+    backdrop-filter: blur(10px);
+}
+.bot-navbar button {
+    background: none;
+    border: none;
+    width: 18vw;
+    height: 3vh;
+}
+
+.bot-navbar img {
+    width: 2rem;
+}
+
+.add button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #E3823C, #E33C3C);
+    border: none;
+    position: fixed;
+    font-size: 2rem;
+    bottom: 6.5rem;
+    z-index: 999;
+    right: 1.5rem;
+    box-shadow: 1px 1px 1rem 10px #262450;
+
+}
+
+.user-info {
+    display: flex;
+    max-width: 95vw;
+    height: 18vh;
+    margin: 2rem auto;
+    gap:1rem;
+    background: linear-gradient(90deg, #19173D 70%, #FFFFFF 80%, #E3B53C 100%);
+    backdrop-filter: blur(100%);
+    border-radius: 1rem;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 1rem;
+    align-content: center;
+}
+.user-info-name {
+    width: 70%;
+    height: 15vh;
+    color: #fff;
+    padding: 1rem;
+    flex-direction: column;
+    position: relative;
+
+}
+.user-phone-mail {
+    width: 80%;
+
+}
+.user-info-img img {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    top: 1rem;
+    border: 5px solid white;
+    border-radius: 50%;
+
+}
+.payment-methods {
+    margin: 1rem auto;
+    width: 95vw;
+    height: 25vh;
+    border-radius: 1rem;
+    background: rgba(38, 36, 80, 0.5); /* 50% цвета */
+    backdrop-filter: blur(12px);
+    padding: 1.4rem 1.5rem;
+    display: flex;
+    color: #fff;
+    font-size: 0.8rem;
+    flex-direction: column;
+}
+.payment-button button {
+    background: none;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem ;
+    width: 8rem;
+    height: 8rem;
+    border: none;
+
+}
+.payment-button {
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem auto;
+    gap: 1rem;
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 95vw;
+    height: 25vh;
+    border-radius: 1rem;
+    background: rgba(38, 36, 80, 0.5); /* 50% цвета */
+    backdrop-filter: blur(12px);    padding: 1.4rem 1.5rem;
+    display: flex;
+    color: #fff;
+    font-size: 0.8rem;
+    flex-direction: column;
+}
+.wallet-cards {
+    display: flex;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.wallet-cards h2 {
+    width: 100%;
+    text-align: center;
+    color: #E3B53C;
+}
+.wallet-card img{
+    display: block;
+    max-width: 90%;
+    min-height: 25vh;
+    border-radius: 1rem;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.card-balance {
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.add-card {
+    width: 95vw;
+    height: 20rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    background: rgba(38, 36, 80, 0.5); /* 50% цвета */
+    backdrop-filter: blur(12px);
+    margin: 2rem auto;
+
+}
+
+
+.add-cards h2 {
+    color: #E3B53C;
+    padding-top: 2rem;
+    padding-left: 2rem;
+
+}
+.add-cards p {
+    color: #fff;
+    padding-left: 2rem;
+    margin-left: 1rem;
+}
+
+ input {
+    display: flex;
+    width: 90%;
+    border-radius: 1rem;
+    flex-direction: column;
+    padding: 0.8rem;
+     margin: 0 auto;
+}
+ #password {
+    margin-top: 1rem;
+ }
+.card-add-button {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.card-add-button button {
+    background: linear-gradient(180deg, #E3823C, #E33C3C);
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    width: 30%;
+    height: 3rem;
+    padding: 1rem;
+
+}
+
+.close-button-payment {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    color: #E3B53C;
+    margin-top: 2rem;
+
+}
+#payment-method-img {
+    width: 10px;
+    height: 6px;
+}
+.close-button-payment img {
+    width: 1rem;
+    height: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount-method {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    padding: 1rem;
+    gap: 1rem;
+    background: linear-gradient(180deg, #E3823C, #E33C3C);
+    color: white;
+    font-size: 0.8rem;
+}
+.amount-method button {
+    width: 20rem;
+    height: 3rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    background: linear-gradient(180deg, #E3823C, #E33C3C);
+
+}
+.amount-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40vh;
+    font-size: 1rem;
+}
+.amount-input input {
+    width: 90%;
+    height: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    text-align: right;
+    background: rgba(38, 36, 80, 0.5);
+}
+.amount-input button {
+    width: 10rem;
+    height: 3rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, #E3823C, #E33C3C);
+    color: white;
+
+}
+.category {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: 1rem;
+}
+.category p{
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    background: linear-gradient(180deg, #E33C3C, #E3823C);
+    margin: 0 auto;
+    border-radius: 0 0 1rem 1rem;
+
+}
+
+.category-card {
+    display: flex;
+    width: 94%;
+    height: 18vh;
+    margin: 1rem auto;
+    background: rgba(38, 36, 80, 0.5);
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+    flex-direction: column;
+    color: white;
+    justify-content: flex-start;
+    padding: 0;
+
+}
+.category-card h2 {
+    width: 100%;
+    padding: 1rem ;
+}
+
+.category-card p {
+    width: 90%;
+    margin: 1rem;
+    border-bottom: 2px solid #E3823C;
+    text-align: left;
+}
+
+.highlight-choice {
+    display: flex;
+    width: 100%;
+    color: white;
+}
+.highlight-choice button {
+    width: 50%;
+    height: 3rem;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    background: #141326;
+    color: #fff;
+
+}
+
+.highlight-plan {
+    display: flex;
+    width: 94vw;
+    height: 43vh;
+    color: white;
+    flex-direction: column;
+    padding: 1rem;
+    background: rgba(38, 36, 80, 0.5);
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.highlight-plan-title {
+    width: 100%;
+    text-align: left;
+    color: #E3B53C;
+    padding: 1rem;
+}
+form input {
+    margin-bottom: 1rem;
+    background: #141326;
+    border: none;
+
+}
+form button {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: #141326;
+    border: none;
+    color: #fff;
+
+}
+
+.procent-btn {
+    display: flex;
+    justify-content: space-evenly;
+}
+.save-button {
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+
+}
+.save-button button {
+    width: 40%;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, #E3823C, #E33C3C);
+    color: white;
+    margin: 1.5rem auto;
+}
